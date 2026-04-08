@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>智慧家 SmartHome — 让生活更聪明</title>
+  <meta name="description" content="智慧家提供智能门锁、灯光控制、智能插座等全屋智能解决方案，让家更安全、更便捷、更节能。" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ==================== 导航栏 ==================== -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <div class="logo-icon">⌂</div>
+      <span>智慧家 SmartHome</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" data-page="home" class="active">首页</a></li>
+      <li><a href="#" data-page="products">产品</a></li>
+      <li><a href="#" data-page="support">服务支持</a></li>
+      <li><a href="#" data-page="about">关于我们</a></li>
+      <li><a href="#" data-page="support" class="nav-cta">立即咨询</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ==========================================
+     PAGE 1 — 首页
+========================================== -->
+<div class="page active" id="home">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-badge">🏆 2024年度智能家居品牌</div>
+    <h1>让每个家<span>更聪明</span>、更安全</h1>
+    <p>智慧家提供一站式全屋智能解决方案，从门锁到灯光，从插座到安防，用科技让生活触手可及。</p>
+    <div class="hero-actions">
+      <a href="#" class="btn-primary" data-goto="products">探索产品系列</a>
+      <a href="#" class="btn-outline" data-goto="about">了解我们</a>
+    </div>
+  </section>
+
+  <!-- 数据统计 -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-num" data-target="500000" data-suffix="+">0</div>
+        <div class="stat-label">全国用户</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="98" data-suffix="%">0</div>
+        <div class="stat-label">用户好评率</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="200" data-suffix="+">0</div>
+        <div class="stat-label">城市覆盖</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="8" data-suffix="年">0</div>
+        <div class="stat-label">深耕智能行业</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 核心功能 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">核心优势</span>
+      <h2>为什么选择智慧家？</h2>
+      <p>我们以用户体验为核心，从产品设计到售后服务，每个环节都精益求精。</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon" style="background:#e8f0fe">🔒</div>
+        <h3>军事级别安全加密</h3>
+        <p>采用国家商用密码算法，端对端数据加密，设备与云端通信全程安全，让您的家永不被入侵。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:#e0f7f4">📱</div>
+        <h3>一键掌控全屋</h3>
+        <p>通过智慧家 App，随时随地控制家中所有智能设备，支持场景联动，一个命令开启完美生活模式。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:#fff8e1">⚡</div>
+        <h3>节能省电效果显著</h3>
+        <p>智能感应+定时控制，根据用户习惯自动学习优化，平均每月节省用电 20%-40%，一年省回设备费。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:#fce4ec">🌐</div>
+        <h3>多品牌生态互通</h3>
+        <p>支持 Zigbee、Wi-Fi、蓝牙 Mesh 多协议，兼容主流智能家居品牌，无缝接入现有家居生态。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:#f3e5f5">🤖</div>
+        <h3>AI 语音智能控制</h3>
+        <p>适配天猫精灵、小爱同学、小度等主流语音助手，说话即控制，解放双手，体验未来生活。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:#e8f5e9">🔧</div>
+        <h3>专业安装 + 售后保障</h3>
+        <p>全国 200+ 城市专业安装师傅上门服务，产品质保 2 年，7×24 小时在线技术支持。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 产品预览 -->
+  <div style="background:white; padding:60px 0;">
+    <div class="section" style="padding-top:0;padding-bottom:0;">
+      <div class="section-header">
+        <span class="section-label">明星产品</span>
+        <h2>三大核心产品线</h2>
+        <p>覆盖家居安全、照明节能、用电管理，打造全方位智能生活体验。</p>
+      </div>
+      <div class="grid-3">
+        <div class="card" style="text-align:center;cursor:pointer;" onclick="showPage('products')">
+          <div style="font-size:3.5rem;margin-bottom:16px;">🔐</div>
+          <div class="tag" style="margin-bottom:12px;">安全防护</div>
+          <h3>智能门锁</h3>
+          <p>指纹/密码/NFC/人脸识别四合一，C 级锁芯，让家的守护无懈可击。</p>
+          <div style="margin-top:16px;color:var(--primary);font-weight:600;font-size:0.9rem;">查看详情 →</div>
+        </div>
+        <div class="card" style="text-align:center;cursor:pointer;" onclick="showPage('products')">
+          <div style="font-size:3.5rem;margin-bottom:16px;">💡</div>
+          <div class="tag tag-orange" style="margin-bottom:12px;">氛围照明</div>
+          <h3>智能灯控</h3>
+          <p>全彩调光调色，场景一键切换，支持语音联动，营造完美生活氛围。</p>
+          <div style="margin-top:16px;color:var(--primary);font-weight:600;font-size:0.9rem;">查看详情 →</div>
+        </div>
+        <div class="card" style="text-align:center;cursor:pointer;" onclick="showPage('products')">
+          <div style="font-size:3.5rem;margin-bottom:16px;">🔌</div>
+          <div class="tag tag-green" style="margin-bottom:12px;">节能管理</div>
+          <h3>智能插座</h3>
+          <p>实时用电监控，防过载保护，定时开关，远程断电，安全节能两不误。</p>
+          <div style="margin-top:16px;color:var(--primary);font-weight:600;font-size:0.9rem;">查看详情 →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 智能家居生活场景 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">生活场景</span>
+      <h2>覆盖全天候智能场景</h2>
+      <p>从早晨醒来到夜晚入睡，智慧家陪伴生活每一刻。</p>
+    </div>
+    <div class="grid-4">
+      <div class="card" style="text-align:center;padding:24px;">
+        <div style="font-size:2.5rem;margin-bottom:14px;">🌅</div>
+        <h3 style="font-size:1rem;">早安模式</h3>
+        <p style="font-size:0.88rem;">定时开窗帘、渐亮灯光、热水器预热，舒适唤醒美好一天</p>
+      </div>
+      <div class="card" style="text-align:center;padding:24px;">
+        <div style="font-size:2.5rem;margin-bottom:14px;">🏠</div>
+        <h3 style="font-size:1rem;">回家模式</h3>
+        <p style="font-size:0.88rem;">接近门口自动开锁，灯光欢迎，空调预调温度，一键切换</p>
+      </div>
+      <div class="card" style="text-align:center;padding:24px;">
+        <div style="font-size:2.5rem;margin-bottom:14px;">🎬</div>
+        <h3 style="font-size:1rem;">影院模式</h3>
+        <p style="font-size:0.88rem;">关灯、降窗帘、暖色氛围灯，自动营造家庭影院氛围</p>
+      </div>
+      <div class="card" style="text-align:center;padding:24px;">
+        <div style="font-size:2.5rem;margin-bottom:14px;">🌙</div>
+        <h3 style="font-size:1rem;">睡眠模式</h3>
+        <p style="font-size:0.88rem;">全屋断电、门锁上锁、灯光渐灭，安心进入梦乡</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 用户评价 -->
+  <div style="background:white;padding:60px 0;">
+    <div class="section" style="padding-top:0;padding-bottom:0;">
+      <div class="section-header">
+        <span class="section-label">用户好评</span>
+        <h2>真实用户的声音</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+            <div style="width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#1a73e8,#00c9a7);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;">李</div>
+            <div>
+              <div style="font-weight:700;">李先生</div>
+              <div style="font-size:0.85rem;color:var(--text-muted);">北京 · 三居室业主</div>
+            </div>
+            <div style="margin-left:auto;color:#ffd600;">★★★★★</div>
+          </div>
+          <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.7;">"智能门锁装上后，再也不用担心忘带钥匙了。孩子下学自己刷脸进门，家长手机同步收到通知，安全感满满！"</p>
+        </div>
+        <div class="card">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+            <div style="width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#e91e63,#ff9800);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;">王</div>
+            <div>
+              <div style="font-weight:700;">王女士</div>
+              <div style="font-size:0.85rem;color:var(--text-muted);">上海 · 精装公寓</div>
+            </div>
+            <div style="margin-left:auto;color:#ffd600;">★★★★★</div>
+          </div>
+          <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.7;">"灯控系统真的太好用了，用手机就能调节各种氛围，周末在家还能模拟咖啡馆那种橘色暖光，整个人都放松了。"</p>
+        </div>
+        <div class="card">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+            <div style="width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#009688,#4caf50);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;">张</div>
+            <div>
+              <div style="font-weight:700;">张先生</div>
+              <div style="font-size:0.85rem;color:var(--text-muted);">深圳 · 智能家居爱好者</div>
+            </div>
+            <div style="margin-left:auto;color:#ffd600;">★★★★★</div>
+          </div>
+          <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.7;">"装了智能插座以后，每个月电费账单都在减少，还能知道哪些设备耗电多，第一个月就感觉值回来了。"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div style="background:linear-gradient(135deg,#0f2041,#0e4d7a);padding:80px 24px;text-align:center;">
+    <div style="max-width:600px;margin:0 auto;">
+      <h2 style="color:white;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:800;margin-bottom:14px;">准备好升级你的家了吗？</h2>
+      <p style="color:rgba(255,255,255,0.7);margin-bottom:32px;font-size:1.05rem;">免费上门设计方案，专业安装，让你的家在一天之内焕然一新。</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <a href="#" class="btn-primary" data-goto="support">免费咨询方案</a>
+        <a href="#" class="btn-outline" data-goto="products">查看全部产品</a>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /home -->
+
+
+<!-- ==========================================
+     PAGE 2 — 产品
+========================================== -->
+<div class="page" id="products">
+
+  <div class="product-hero">
+    <span class="hero-badge" style="background:rgba(0,201,167,0.15);border-color:rgba(0,201,167,0.35);color:#00c9a7;">🛒 全系产品展示</span>
+    <h1>智能家居产品系列</h1>
+    <p>每款产品均通过国家安全认证，从设计到工艺，为您的家保驾护航。</p>
+  </div>
+
+  <div class="section">
+
+    <!-- 产品导航锚点 -->
+    <div style="display:flex;gap:12px;margin-bottom:40px;flex-wrap:wrap;">
+      <a href="#lock" style="padding:9px 20px;border-radius:50px;background:var(--primary);color:white;font-weight:600;font-size:0.9rem;">🔐 智能门锁</a>
+      <a href="#light" style="padding:9px 20px;border-radius:50px;background:var(--surface);border:1.5px solid var(--border);color:var(--text-muted);font-weight:600;font-size:0.9rem;">💡 灯光控制</a>
+      <a href="#socket" style="padding:9px 20px;border-radius:50px;background:var(--surface);border:1.5px solid var(--border);color:var(--text-muted);font-weight:600;font-size:0.9rem;">🔌 智能插座</a>
+    </div>
+
+    <!-- ---- 产品1：智能门锁 ---- -->
+    <div id="lock" class="product-card">
+      <div class="product-card-layout">
+        <div class="product-visual bg-blue">🔐</div>
+        <div class="product-info">
+          <span class="tag">安全首选</span>
+          <h2>智慧锁 Pro X5</h2>
+          <p class="subtitle">智能门锁旗舰款</p>
+          <p>采用德国进口精密锁体，搭载第六代活体指纹识别芯片，0.3秒极速开锁。支持指纹、密码、NFC感应卡、人脸识别、App远程开锁五种解锁方式，更有访客临时密码功能，真正实现无钥匙生活。</p>
+          <ul class="feature-list">
+            <li>第六代活体指纹识别，防伪指纹，100枚指纹容量</li>
+            <li>人脸 3D 结构光识别，夜视 IR 补光，防照片攻击</li>
+            <li>C 级超 B 锁芯，防撬、防钻、防磁，三重物理防护</li>
+            <li>NFC/IC 感应卡，支持手机虚拟卡片</li>
+            <li>低电量预警 + Type-C 外接应急供电</li>
+            <li>手机 App 开门记录推送，异常入侵实时报警</li>
+          </ul>
+          <div class="spec-tags">
+            <span class="tag">防火等级 A</span>
+            <span class="tag">IP65 防水</span>
+            <span class="tag tag-green">2年质保</span>
+            <span class="tag tag-orange">免费安装</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---- 产品2：灯光控制 ---- -->
+    <div id="light" class="product-card">
+      <div class="product-card-layout reverse">
+        <div class="product-visual bg-amber">💡</div>
+        <div class="product-info">
+          <span class="tag tag-orange">热销爆款</span>
+          <h2>智慧灯控 LightMesh</h2>
+          <p class="subtitle">全屋灯光智能控制系统</p>
+          <p>告别单调的白光开关，LightMesh 全彩灯控系统让你随心设定每一个空间的光线情绪。从清晨的渐亮唤醒到深夜的柔和护眼，从办公的专注冷白到餐厅的暖黄烛光，一款系统满足全屋所有照明需求。</p>
+          <ul class="feature-list">
+            <li>1600 万色彩调节，CRI 显色指数 &gt; 95，还原真实色彩</li>
+            <li>色温 2700K-6500K 无级调节，护眼不闪烁</li>
+            <li>Zigbee 3.0 协议，500ms 响应，无线组网最大支持 200 个灯</li>
+            <li>内置 50+ 场景预设，支持自定义一键场景切换</li>
+            <li>断电记忆功能，来电自动恢复上次状态</li>
+            <li>语音控制接入小爱、天猫精灵、小度</li>
+          </ul>
+          <div class="spec-tags">
+            <span class="tag">国家 3C 认证</span>
+            <span class="tag">蓝光护眼</span>
+            <span class="tag tag-green">节能 40%</span>
+            <span class="tag tag-orange">免费安装</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---- 产品3：智能插座 ---- -->
+    <div id="socket" class="product-card">
+      <div class="product-card-layout">
+        <div class="product-visual bg-teal">🔌</div>
+        <div class="product-info">
+          <span class="tag tag-green">节能环保</span>
+          <h2>智慧插座 PowerSafe S3</h2>
+          <p class="subtitle">全功能智能电力管理插座</p>
+          <p>PowerSafe S3 不只是一个"能远程开关"的插座，更是一个完整的家庭电力管理中心。实时监测每路插孔的用电量、功率、电流，自动识别异常并切断保护，让用电安全和节能从此变得简单。</p>
+          <ul class="feature-list">
+            <li>3 路 AC 插孔 + 4 口 USB-A/C（含 65W PD 快充）</li>
+            <li>实时功率监控，每孔独立计量，App 精确显示度数</li>
+            <li>过载/过压/过温/短路四重保护，断路器级安全标准</li>
+            <li>定时开关 + 节假日计划，全年用电自动管理</li>
+            <li>小孩防触安全门，防误触设计</li>
+            <li>Wi-Fi + 蓝牙双连接，离线也可本地控制</li>
+          </ul>
+          <div class="spec-tags">
+            <span class="tag">3C 认证</span>
+            <span class="tag">防雷 II 级</span>
+            <span class="tag tag-green">年省电费 30%</span>
+            <span class="tag tag-orange">2年质保</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 通用功能对比 -->
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;margin-top:20px;">
+      <div class="section-header" style="margin-bottom:32px;">
+        <span class="section-label">产品对比</span>
+        <h2>三款产品功能速览</h2>
+      </div>
+      <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="background:var(--primary);color:white;">
+              <th style="padding:14px 18px;text-align:left;border-radius:8px 0 0 0;">功能</th>
+              <th style="padding:14px 18px;text-align:center;">🔐 智能门锁</th>
+              <th style="padding:14px 18px;text-align:center;">💡 灯光控制</th>
+              <th style="padding:14px 18px;text-align:center;border-radius:0 8px 0 0;">🔌 智能插座</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:12px 18px;font-weight:600;">App 远程控制</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);background:#fafbfc;">
+              <td style="padding:12px 18px;font-weight:600;">语音助手联动</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:12px 18px;font-weight:600;">场景联动</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);background:#fafbfc;">
+              <td style="padding:12px 18px;font-weight:600;">定时自动化</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:12px 18px;font-weight:600;">离线本地控制</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+              <td style="text-align:center;color:var(--text-muted);">—</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+            </tr>
+            <tr style="background:#fafbfc;">
+              <td style="padding:12px 18px;font-weight:600;">安全报警</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+              <td style="text-align:center;color:var(--text-muted);">—</td>
+              <td style="text-align:center;color:var(--accent);">✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /products -->
+
+
+<!-- ==========================================
+     PAGE 3 — 服务支持
+========================================== -->
+<div class="page" id="support">
+
+  <div class="support-hero">
+    <span class="hero-badge" style="background:rgba(0,201,167,0.15);border-color:rgba(0,201,167,0.35);color:#00c9a7;">💬 7×24 小时在线服务</span>
+    <h1>全方位服务支持</h1>
+    <p>从购买到安装，从使用到维修，我们的专业团队全程陪伴，让您零后顾之忧。</p>
+  </div>
+
+  <div class="section">
+
+    <!-- 服务流程 -->
+    <div class="section-header">
+      <span class="section-label">服务流程</span>
+      <h2>简单四步，轻松搞定</h2>
+      <p>从咨询到安装，平均不超过 3 个工作日，让智能生活快速到来。</p>
+    </div>
+    <div class="process-steps">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <h4>在线咨询</h4>
+        <p>拨打热线或在线留言，专业顾问免费评估您的家庭需求，推荐最适合的方案</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <h4>方案确认</h4>
+        <p>提供详细设计方案和报价清单，确认后安排下单，支持多种付款方式</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <h4>专业安装</h4>
+        <p>持证安装工程师上门安装，当天完成，安装完毕后手把手教您使用 App</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <h4>售后保障</h4>
+        <p>安装后 48 小时内回访，遇到问题随时联系，质保期内免费上门维修</p>
+      </div>
+    </div>
+
+    <!-- 售后保障 -->
+    <div class="section-header" style="margin-top:60px;">
+      <span class="section-label">售后政策</span>
+      <h2>安心购，无忧用</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon" style="background:#e8f0fe;">🛡️</div>
+        <h3>7 天无理由退货</h3>
+        <p>自收货之日起 7 天内，如对产品不满意，可申请无理由退货退款，原路返还，不扣任何费用。</p>
+        <div style="margin-top:16px;">
+          <span class="tag">适用全部产品</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:#e0f7f4;">🔧</div>
+        <h3>2 年整机质保</h3>
+        <p>非人为损坏（如进水、摔落等）的故障，质保期内免费上门维修或更换同款新品，运费由我们承担。</p>
+        <div style="margin-top:16px;">
+          <span class="tag tag-green">整机免费维修</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:#fff8e1;">📞</div>
+        <h3>终身技术支持</h3>
+        <p>App 使用问题、设备联网配置、场景设置等软件层面的技术支持，终身免费提供，随叫随到。</p>
+        <div style="margin-top:16px;">
+          <span class="tag tag-orange">终身有效</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="section-header" style="margin-top:60px;">
+      <span class="section-label">常见问题</span>
+      <h2>您最关心的问题</h2>
+    </div>
+    <div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>智能门锁断网断电了怎么办？还能正常开门吗？</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">完全不用担心！智能门锁采用本地存储指纹和密码，断网情况下仍可通过指纹、密码、实体钥匙正常开门。同时，门锁内置 4 节 5 号电池可用 8-12 个月，并具备低电量预警（剩余 20% 时 App 推送通知）。万一完全断电，可用门锁底部的 Type-C 接口，用移动电源临时供电后开门。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>家里网络不好，智能灯光控制会有延迟或掉线问题吗？</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">智慧家灯控系统采用 Zigbee 3.0 协议，设备之间组成自治网状网络，不完全依赖家庭路由器。即使网络不稳定，设备间依然可以相互通信，控制延迟通常在 200ms 以内。同时支持本地场景执行，哪怕完全断网，设置好的定时和场景也会在本地自动运行。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>旧房子可以安装智能家居吗？需要重新布线吗？</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">完全可以！我们的产品专门针对改装市场设计：智能门锁直接替换原有门锁无需布线；智能灯控面板采用零火/单火两种接线方案，兼容大多数旧房电路；智能插座直接替换原有插座即可。安装过程中，我们的工程师会根据您家的实际电路情况选择最合适的安装方式，通常不需要大规模重新布线。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>家里有老人小孩，智能门锁安不安全？会不会被技术手段破解？</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">安全性是我们的首要设计原则。我们的门锁通过公安部检测认证，采用国家商用密码算法对通信数据全程加密，防止信号截取复制。物理层面使用 C 级锁芯（破解难度是普通锁的数十倍），防撬报警传感器，以及第六代活体检测指纹技术（防止假指纹攻击）。针对老人，我们提供大字体界面和语音提示；针对儿童，支持儿童模式和独立门禁记录。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>安装需要多长时间？安装时需要我在家配合吗？</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">安装时间因产品组合不同而异：单个智能门锁约 45-60 分钟；灯控改造根据灯的数量，通常 2-4 小时可完成一套三居室。安装期间需要有成年人在家，一方面是出于安全考虑，另一方面安装完成后工程师会当面演示 App 操作，确保您能熟练使用。安装前一天会有客服再次确认时间，如临时有事可提前联系改期。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>智能插座的用电数据准不准？能精确到度数吗？</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">PowerSafe S3 内置高精度电能计量芯片，每路插孔精度可达 ±1%，可精确显示每个设备的实时功率（W）、累计用电量（度）、电流（A）和电压（V）。App 中支持按日/周/月查看用电趋势图，帮您识别"用电大户"，制定节电计划。</div>
+      </div>
+    </div>
+
+    <!-- 联系我们 -->
+    <div class="section-header" style="margin-top:60px;">
+      <span class="section-label">联系方式</span>
+      <h2>多渠道随时联系我们</h2>
+    </div>
+    <div class="contact-channels">
+      <div class="channel-card">
+        <div class="channel-icon">📞</div>
+        <h4>售前热线</h4>
+        <p>专业顾问为您解答产品选购、方案设计等问题</p>
+        <div class="phone">400-888-9999</div>
+        <div style="font-size:0.85rem;color:var(--text-muted);margin-top:6px;">周一至周日 9:00 - 21:00</div>
+      </div>
+      <div class="channel-card">
+        <div class="channel-icon">🛠️</div>
+        <h4>售后报修</h4>
+        <p>设备故障、安装问题等售后事项，快速响应处理</p>
+        <div class="phone">400-888-8888</div>
+        <div style="font-size:0.85rem;color:var(--text-muted);margin-top:6px;">7×24 小时不间断服务</div>
+      </div>
+      <div class="channel-card">
+        <div class="channel-icon">💬</div>
+        <h4>在线客服</h4>
+        <p>App 内"我的—在线客服"，平均 3 分钟响应</p>
+        <div class="phone" style="font-size:1rem;">扫码打开 App</div>
+        <div style="font-size:0.85rem;color:var(--text-muted);margin-top:6px;">全天候在线，即刻响应</div>
+      </div>
+    </div>
+
+    <!-- 质保说明表 -->
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;margin-top:40px;">
+      <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:24px;">📋 产品质保一览表</h3>
+      <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+          <thead>
+            <tr style="background:var(--primary-light);color:var(--primary);">
+              <th style="padding:12px 16px;text-align:left;">产品名称</th>
+              <th style="padding:12px 16px;text-align:center;">整机质保</th>
+              <th style="padding:12px 16px;text-align:center;">核心部件</th>
+              <th style="padding:12px 16px;text-align:center;">上门维修</th>
+              <th style="padding:12px 16px;text-align:center;">技术支持</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:12px 16px;font-weight:600;">🔐 智慧锁 Pro X5</td>
+              <td style="text-align:center;color:var(--accent);">2 年</td>
+              <td style="text-align:center;color:var(--accent);">锁体终身</td>
+              <td style="text-align:center;color:var(--accent);">免费</td>
+              <td style="text-align:center;color:var(--accent);">终身</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);background:#fafbfc;">
+              <td style="padding:12px 16px;font-weight:600;">💡 智慧灯控系统</td>
+              <td style="text-align:center;color:var(--accent);">2 年</td>
+              <td style="text-align:center;color:var(--accent);">灯珠 5 年</td>
+              <td style="text-align:center;color:var(--accent);">免费</td>
+              <td style="text-align:center;color:var(--accent);">终身</td>
+            </tr>
+            <tr>
+              <td style="padding:12px 16px;font-weight:600;">🔌 PowerSafe S3</td>
+              <td style="text-align:center;color:var(--accent);">2 年</td>
+              <td style="text-align:center;color:var(--accent);">2 年</td>
+              <td style="text-align:center;color:var(--accent);">免费</td>
+              <td style="text-align:center;color:var(--accent);">终身</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--text-muted);font-size:0.85rem;margin-top:16px;">* 质保期从购买日期起计算。人为损坏（进水、摔落、私自拆修等）不在免费质保范围内，但可提供低价有偿维修服务。</p>
+    </div>
+
+  </div>
+</div><!-- /support -->
+
+
+<!-- ==========================================
+     PAGE 4 — 关于我们
+========================================== -->
+<div class="page" id="about">
+
+  <div class="about-hero">
+    <span class="hero-badge" style="background:rgba(0,201,167,0.15);border-color:rgba(0,201,167,0.35);color:#00c9a7;">🏢 关于智慧家</span>
+    <h1>用科技连接美好生活</h1>
+    <p>我们相信，每一个家都应该是安全的、便捷的、充满温度的。这是我们创业的初心，也是我们每天前进的动力。</p>
+  </div>
+
+  <div class="section">
+
+    <!-- 公司简介 -->
+    <div class="about-intro">
+      <div class="about-intro-text">
+        <span class="section-label">公司简介</span>
+        <h2>深耕智能家居 8 年的行业领跑者</h2>
+        <p>智慧家科技有限公司（SmartHome Tech Co., Ltd.）成立于 2016 年，总部位于深圳市南山区科技园，是一家专注于智能家居产品研发、生产与服务的高新技术企业。</p>
+        <p>公司旗下拥有智能门锁、灯光控制、智能插座、安防摄像等四大产品线，累计服务全国超 50 万个家庭，产品覆盖 200+ 城市，连续三年入选"中国智能家居品牌 TOP10"。</p>
+        <p>我们拥有一支 300+ 人的研发团队，持有国家授权专利 120 余项，与华为 IoT 生态、阿里巴巴天猫精灵、小米生态链均建立深度合作关系。</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;">
+          <span class="tag">国家高新技术企业</span>
+          <span class="tag tag-green">ISO 9001 认证</span>
+          <span class="tag tag-orange">120+ 项专利</span>
+          <span class="tag">华为生态合作伙伴</span>
+        </div>
+      </div>
+      <div class="about-visual">🏢</div>
+    </div>
+
+    <!-- 发展历程 -->
+    <div style="margin-top:80px;">
+      <div class="section-header">
+        <span class="section-label">发展历程</span>
+        <h2>一步一个脚印的成长之路</h2>
+      </div>
+      <div style="max-width:600px;margin:0 auto;">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="year">2016 年</div>
+            <h4>公司创立</h4>
+            <p>在深圳科技园注册成立，推出第一代智能门锁产品，开启智能家居征程。</p>
+          </div>
+          <div class="timeline-item">
+            <div class="year">2018 年</div>
+            <h4>产品线扩展</h4>
+            <p>智能灯控和插座系列正式上市，完成天使轮融资 5000 万人民币，用户突破 10 万。</p>
+          </div>
+          <div class="timeline-item">
+            <div class="year">2020 年</div>
+            <h4>生态合作</h4>
+            <p>与华为、阿里、小米三大生态正式建立合作，接入全国 100+ 城市服务网络。</p>
+          </div>
+          <div class="timeline-item">
+            <div class="year">2022 年</div>
+            <h4>规模突破</h4>
+            <p>累计用户突破 30 万，完成 B 轮融资 2 亿，荣获"中国智能家居品牌 TOP10"。</p>
+          </div>
+          <div class="timeline-item">
+            <div class="year">2024 年</div>
+            <h4>行业领跑</h4>
+            <p>用户超 50 万，覆盖 200+ 城市，发布新一代 AI 感知产品线，迈向全屋智能 2.0 时代。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 核心团队 -->
+    <div style="margin-top:80px;">
+      <div class="section-header">
+        <span class="section-label">核心团队</span>
+        <h2>专业驱动，用心服务</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar" style="background:linear-gradient(135deg,#1a73e8,#00c9a7);">😊</div>
+          <h4>陈志远</h4>
+          <div class="role">创始人 & CEO</div>
+          <p>前华为 IoT 部门总监，10 年智能硬件从业经验，清华大学工学博士。</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background:linear-gradient(135deg,#e91e63,#ff9800);">👩</div>
+          <h4>林晓雯</h4>
+          <div class="role">联合创始人 & CTO</div>
+          <p>前阿里云 IoT 架构师，专注智能硬件嵌入式开发，国家技术发明奖获得者。</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background:linear-gradient(135deg,#009688,#4caf50);">🧑</div>
+          <h4>王建国</h4>
+          <div class="role">COO 运营总监</div>
+          <p>前小米生态链运营总监，带领团队完成全国 200+ 城市安装服务网络搭建。</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background:linear-gradient(135deg,#7c4dff,#e040fb);">👩</div>
+          <h4>赵美丽</h4>
+          <div class="role">首席设计师</div>
+          <p>毕业于中央美术学院工业设计专业，主导产品外观设计，荣获红点设计大奖。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 联系方式 & 地址 -->
+    <div style="margin-top:80px;">
+      <div class="section-header">
+        <span class="section-label">联系我们</span>
+        <h2>随时欢迎您的到来</h2>
+      </div>
+      <div class="contact-info-grid">
+        <div class="info-block">
+          <h3>📍 公司信息</h3>
+          <div class="info-row">
+            <div class="info-icon">🏢</div>
+            <div class="info-content">
+              <label>公司全称</label>
+              <p>智慧家科技有限公司</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">📍</div>
+            <div class="info-content">
+              <label>总部地址</label>
+              <p>广东省深圳市南山区科技园南区<br/>智慧创新大厦 A 栋 15 楼</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">📮</div>
+            <div class="info-content">
+              <label>邮政编码</label>
+              <p>518057</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">🚇</div>
+            <div class="info-content">
+              <label>交通指引</label>
+              <p>地铁 2 号线"高新园"站 B 出口步行 5 分钟</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">🕐</div>
+            <div class="info-content">
+              <label>办公时间</label>
+              <p>周一至周五 9:00 - 18:00</p>
+            </div>
+          </div>
+          <!-- 地图占位 -->
+          <div class="map-placeholder">
+            <div class="map-icon">🗺️</div>
+            <div>深圳市南山区科技园</div>
+            <div style="font-size:0.85rem;opacity:0.7;">智慧创新大厦 A 栋 15 楼</div>
+          </div>
+        </div>
+        <div>
+          <div class="info-block" style="margin-bottom:20px;">
+            <h3>📞 联系方式</h3>
+            <div class="info-row">
+              <div class="info-icon">📞</div>
+              <div class="info-content">
+                <label>售前咨询热线</label>
+                <p style="color:var(--primary);font-size:1.1rem;font-weight:700;">400-888-9999</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">🛠️</div>
+              <div class="info-content">
+                <label>售后服务热线</label>
+                <p style="color:var(--primary);font-size:1.1rem;font-weight:700;">400-888-8888</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">📧</div>
+              <div class="info-content">
+                <label>商务合作邮箱</label>
+                <p>business@smarthome.com.cn</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">📧</div>
+              <div class="info-content">
+                <label>媒体公关邮箱</label>
+                <p>pr@smarthome.com.cn</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">🌐</div>
+              <div class="info-content">
+                <label>官方网站</label>
+                <p>www.smarthome.com.cn</p>
+              </div>
+            </div>
+          </div>
+          <div class="info-block">
+            <h3>🤝 合作伙伴</h3>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;">
+              <span style="padding:8px 16px;background:#fff;border:1px solid var(--border);border-radius:8px;font-size:0.9rem;font-weight:600;">🔴 华为</span>
+              <span style="padding:8px 16px;background:#fff;border:1px solid var(--border);border-radius:8px;font-size:0.9rem;font-weight:600;">🟠 阿里巴巴</span>
+              <span style="padding:8px 16px;background:#fff;border:1px solid var(--border);border-radius:8px;font-size:0.9rem;font-weight:600;">🟡 小米</span>
+              <span style="padding:8px 16px;background:#fff;border:1px solid var(--border);border-radius:8px;font-size:0.9rem;font-weight:600;">🔵 腾讯</span>
+              <span style="padding:8px 16px;background:#fff;border:1px solid var(--border);border-radius:8px;font-size:0.9rem;font-weight:600;">🟢 京东</span>
+              <span style="padding:8px 16px;background:#fff;border:1px solid var(--border);border-radius:8px;font-size:0.9rem;font-weight:600;">⚫ 百度</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 荣誉资质 -->
+    <div style="margin-top:60px;">
+      <div class="section-header">
+        <span class="section-label">荣誉资质</span>
+        <h2>获得广泛认可与认证</h2>
+      </div>
+      <div class="grid-4">
+        <div class="card" style="text-align:center;padding:24px;">
+          <div style="font-size:2.5rem;margin-bottom:12px;">🏆</div>
+          <h3 style="font-size:0.95rem;">中国智能家居品牌 TOP10</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);">2022 / 2023 / 2024 连续三年</p>
+        </div>
+        <div class="card" style="text-align:center;padding:24px;">
+          <div style="font-size:2.5rem;margin-bottom:12px;">🎖️</div>
+          <h3 style="font-size:0.95rem;">红点设计大奖</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);">2023 年度工业设计最佳奖</p>
+        </div>
+        <div class="card" style="text-align:center;padding:24px;">
+          <div style="font-size:2.5rem;margin-bottom:12px;">✅</div>
+          <h3 style="font-size:0.95rem;">国家高新技术企业</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);">科技部颁发认证资质</p>
+        </div>
+        <div class="card" style="text-align:center;padding:24px;">
+          <div style="font-size:2.5rem;margin-bottom:12px;">🔒</div>
+          <h3 style="font-size:0.95rem;">ISO 27001 信息安全认证</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);">国际信息安全管理体系</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /about -->
+
+
+<!-- ==================== 页脚 ==================== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand-name">
+        <div style="width:32px;height:32px;background:linear-gradient(135deg,#1a73e8,#00c9a7);border-radius:8px;display:flex;align-items:center;justify-content:center;color:white;">⌂</div>
+        智慧家 SmartHome
+      </div>
+      <p>致力于为每个家庭提供安全、便捷、节能的全屋智能解决方案，让科技温暖生活。</p>
+    </div>
+    <div class="footer-col">
+      <h5>产品系列</h5>
+      <a href="#" data-goto="products">智能门锁</a>
+      <a href="#" data-goto="products">灯光控制系统</a>
+      <a href="#" data-goto="products">智能插座</a>
+      <a href="#" data-goto="products">查看全部产品</a>
+    </div>
+    <div class="footer-col">
+      <h5>服务支持</h5>
+      <a href="#" data-goto="support">售后政策</a>
+      <a href="#" data-goto="support">常见问题</a>
+      <a href="#" data-goto="support">联系客服</a>
+      <a href="#" data-goto="support">在线咨询</a>
+    </div>
+    <div class="footer-col">
+      <h5>关于我们</h5>
+      <a href="#" data-goto="about">公司简介</a>
+      <a href="#" data-goto="about">发展历程</a>
+      <a href="#" data-goto="about">核心团队</a>
+      <a href="#" data-goto="about">联系我们</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 智慧家科技有限公司 版权所有</span>
+    <div style="display:flex;gap:20px;">
+      <a href="#">隐私政策</a>
+      <a href="#">服务条款</a>
+      <a href="#">粤 ICP 备 2024XXXXXXX 号</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
